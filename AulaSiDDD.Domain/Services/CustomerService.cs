@@ -23,5 +23,10 @@ namespace AulaSiDDD.Domain.Services
         {
             throw new NotImplementedException();
         }
+
+        public string HelloWorld()
+        {
+            return "Hello World";
+        }
     }
 }

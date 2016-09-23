@@ -11,5 +11,6 @@ namespace AulaSiDDD.Domain.Interfaces.Service
         Customer GetCustomer(int id);
         List<Customer> GetAll();
         string GetEmail(int id);
+        string HelloWorld();
     }
 }
