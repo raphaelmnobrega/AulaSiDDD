@@ -1,4 +1,5 @@
 ﻿using AulaSiDDD.Domain.Interfaces.Service;
+using AulaSiDDD.Domain.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,16 @@ namespace AulaSiDDD.Web.Controllers
             _customerService = service;
         }
 
+        public CustomerController()
+        {
+            _customerService = new CustomerService();
+        }
+
         // GET: Customer
         public ActionResult Index()
         {
-            return View(_customerService.HelloWorld());
+            ViewBag.HelloWorld = _customerService.HelloWorld();
+            return View();
         }
     }
 }
