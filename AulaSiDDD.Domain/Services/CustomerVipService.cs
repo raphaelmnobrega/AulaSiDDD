@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AulaSiDDD.Domain.Services
 {
-    public class CustomerService : ICustomerService
+    public class CustomerVipService : ICustomerService
     {
         public List<Customer> GetAll()
         {
@@ -24,10 +24,9 @@ namespace AulaSiDDD.Domain.Services
             throw new NotImplementedException();
         }
 
-       
         public string reclamarPedido()
         {
-            return "Quero meu Café!"; 
+            return "Quero meu Capuccino!";
         }
     }
 }

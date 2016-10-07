@@ -24,7 +24,7 @@ namespace AulaSiDDD.Web.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            ViewBag.HelloWorld = _customerService.HelloWorld();
+            ViewBag.HelloWorld = _customerService.reclamarPedido();
             return View();
         }
     }
