@@ -1,22 +1,15 @@
 ﻿using AulaSiDDD.Domain.Interfaces.Repository;
-using AulaSiDDD.Domain.Interfaces.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AulaSiDDD.Domain;
 
-namespace AulaSiDDD.Domain.Services
+namespace AulaSiDDD.Infra.Repository
 {
-    public class CustomerService : ICustomerService
+    public class RepositoryCustomer : IRepositoryCustomer
     {
-        private IRepositoryCustomer _repository;
-
-        public CustomerService(IRepositoryCustomer repository)
-        {
-            _repository = repository;
-        }
-
         public List<Customer> GetAll()
         {
             throw new NotImplementedException();
@@ -32,10 +25,10 @@ namespace AulaSiDDD.Domain.Services
             throw new NotImplementedException();
         }
 
-       
         public string reclamarPedido()
         {
-            return _repository.reclamarPedido(); 
+            //Devo fazer uma consulta no BD e receber os dados que eu quero
+            return "Reclamação Aceita!";
         }
     }
 }

@@ -16,10 +16,10 @@ namespace AulaSiDDD.Web.Controllers
             _customerService = service;
         }
 
-        public CustomerController()
-        {
-            _customerService = new CustomerService();
-        }
+        //public CustomerController()
+        //{
+        //    _customerService = new CustomerService();
+        //}
 
         // GET: Customer
         public ActionResult Index()
