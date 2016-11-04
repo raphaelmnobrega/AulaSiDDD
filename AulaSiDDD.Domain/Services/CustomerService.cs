@@ -19,7 +19,7 @@ namespace AulaSiDDD.Domain.Services
 
         public List<Customer> GetAll()
         {
-            throw new NotImplementedException();
+            return _repository.GetAll();
         }
 
         public Customer GetCustomer(int id)
